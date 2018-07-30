@@ -1,0 +1,11 @@
+- content_for :navbar do
+  ul.navbar-nav.mr-auto
+    = nav_link("Trackers"    , "/core/trackers"       )
+    = nav_link("Issues"      , "/core/issues"      )
+    = nav_link("Offers"      , "/core/offers"      )
+    = nav_link("Contracts"   , "/core/contracts"   )
+
+- content_for :body do
+  = yield
+
+= render template: "layouts/application"
